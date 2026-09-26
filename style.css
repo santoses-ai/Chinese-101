@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #fff6ec;
@@ -24,6 +28,8 @@ body {
     cursor: grab;
     display: inline-block;
     font-size: 1.1em;
+    touch-action: none;
+    user-select: none;
 }
 
 /* Visually changes the card while active dragging happens */
@@ -76,5 +82,37 @@ body {
 
 #reset-btn:active {
     transform: scale(0.98);
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .sentence-pool {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .sentence-card {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .boxes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .drop-box {
+        width: 100%;
+        min-height: 140px;
+    }
 }
 
