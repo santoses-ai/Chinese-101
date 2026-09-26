@@ -1,12 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eedada;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fff6ec;
     text-align: center;
     padding: 20px;
 }
 
 .sentence-pool {
-    background-color: #d7d0cs;
+    background-color: transparent;
     border: 2px solid #3D2411;
     padding: 15px;
     margin-bottom: 30px;
@@ -16,8 +16,8 @@ body {
 }
 
 .sentence-card {
-    background-color: #8A9646;
-    border: 1px solid #36462B;
+    background-color: transparent;
+    border: 1px solid #000000;
     padding: 10px 15px;
     margin: 10px;
     border-radius: 4px;
@@ -39,8 +39,8 @@ body {
 }
 
 .drop-box {
-    background-color: #7f7d74;
-    border: 3px solid #000000;
+    background-color: #eae0d4f3;
+    border:#000000 2px solid;
     border-radius: 8px;
     width: 300px;
     min-height: 200px;
@@ -50,13 +50,13 @@ body {
 
 /* Visual cue when hovering over a drop box */
 .drop-box.hovered {
-    background-color: #f0fdf4;
-    border-color: #22c55e;
+    background-color: #f0f8fd;
+    border-color: #32638d;
 }
 
 #reset-btn {
-    background-color: #0284c7;
-    color: white;
+    background-color: #c1cebb;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
     font-size: 1em;
