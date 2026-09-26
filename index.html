@@ -8,27 +8,30 @@
 </head>
 <body>
     <h1>Chinese Sentence Sorting Game</h1>
-    <p>想 or 觉得?</p>
+    <p data-simp="想 or 觉得?" data-trad="想 or 覺得?">想 or 觉得?</p>
 
     <div class="sentence-pool" id="pool">
         <h3>Sentences to Sort</h3>
-        <div class="sentence-card" draggable="true" id="sentence1" data-correct="box1">我__睡觉。</div>
-        <div class="sentence-card" draggable="true" id="sentence2" data-correct="box2">我__中文很有意思。</div>
-        <div class="sentence-card" draggable="true" id="sentence3" data-correct="box1">我__看电影。</div>
-        <div class="sentence-card" draggable="true" id="sentence4" data-correct="box2">我__打篮球没有意思。</div>
-        <div class="sentence-card" draggable="true" id="sentence5" data-correct="box2">我__中国菜很好吃。</div>
-        <div class="sentence-card" draggable="true" id="sentence6" data-correct="box1">我__吃中国菜。</div>
+        <div class="sentence-card" draggable="true" id="sentence1" data-correct="box1" data-simp="我__睡觉。" data-trad="我__睡覺。">我__睡觉。</div>
+        <div class="sentence-card" draggable="true" id="sentence2" data-correct="box2" data-simp="我__中文很有意思。" data-trad="我__中文很有意思。">我__中文很有意思。</div>
+        <div class="sentence-card" draggable="true" id="sentence3" data-correct="box1" data-simp="我__看电影。" data-trad="我__看電影。">我__看电影。</div>
+        <div class="sentence-card" draggable="true" id="sentence4" data-correct="box2" data-simp="我__打篮球没有意思。" data-trad="我__打籃球沒有意思。">我__打篮球没有意思。</div>
+        <div class="sentence-card" draggable="true" id="sentence5" data-correct="box2" data-simp="我__中国菜很好吃。" data-trad="我__中國菜很好吃。">我__中国菜很好吃。</div>
+        <div class="sentence-card" draggable="true" id="sentence6" data-correct="box1" data-simp="我__吃中国菜。" data-trad="我__吃中國菜。">我__吃中国菜。</div>
     </div>
     
-    <button id="reset-btn">Play Again</button>
-
     <div class="boxes-container">
         <div class="drop-box" id="box1">
-            <h2>想</h2>
+            <h2 data-simp="想" data-trad="想">想</h2>
         </div>
         <div class="drop-box" id="box2">
-            <h2>觉得</h2>
+            <h2 data-simp="觉得" data-trad="覺得">觉得</h2>
         </div>
+    </div>
+
+    <div class="game-controls">
+        <button id="reset-btn" type="button">Play Again</button>
+        <button id="language-btn" type="button" aria-label="Switch to Traditional Chinese">Traditional Chinese</button>
     </div>
 
     <script src="script.js"></script>
