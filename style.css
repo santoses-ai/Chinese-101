@@ -60,9 +60,8 @@ body {
     border-color: #32638d;
 }
 
-#reset-btn {
-   display: block;
-   margin: 0 auto 25px;
+#reset-btn,
+#language-btn {
     background-color: #c1cebb;
     color: rgb(0, 0, 0);
     border: none;
@@ -72,15 +71,25 @@ body {
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
-    margin-bottom: 25px;
     transition: background-color 0.2s;
 }
 
-#reset-btn:hover {
+.game-controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+#reset-btn:hover,
+#language-btn:hover {
     background-color: #f4bbc9;
 }
 
-#reset-btn:active {
+#reset-btn:active,
+#language-btn:active {
     transform: scale(0.98);
 }
 
