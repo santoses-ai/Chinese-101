@@ -53,3 +53,25 @@ body {
     background-color: #f0fdf4;
     border-color: #22c55e;
 }
+
+#reset-btn {
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: background-color 0.2s;
+}
+
+#reset-btn:hover {
+    background-color: #0369a1;
+}
+
+#reset-btn:active {
+    transform: scale(0.98);
+}
+
