@@ -40,6 +40,13 @@ boxes.forEach(box => {
         }
     });
 });
+document.getElementById('reset-btn').addEventListener('click', () => {
+    cards.forEach(card => {
+        pool.appendChild(card);
+        card.style.borderColor = '';
+        card.style.backgroundColor = '';
+    });
+});
 
 // 4. Simple Verification System
 function checkAnswer(card, targetBoxId) {
