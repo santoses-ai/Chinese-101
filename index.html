@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Sentence Sorting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Chinese Sentence Sorting Game</h1>
+    <p>想 or 觉得?</p>
+
+    <div class="sentence-pool" id="pool">
+        <h3>Sentences to Sort</h3>
+        <div class="sentence-card" draggable="true" id="sentence1" data-correct="box1">我__睡觉。</div>
+        <div class="sentence-card" draggable="true" id="sentence2" data-correct="box2">我__中文有意思。</div>
+        <div class="sentence-card" draggable="true" id="sentence3" data-correct="box1">我__看电影。</div>
+        <div class="sentence-card" draggable="true" id="sentence4" data-correct="box2">我__篮球没有意思。</div>
+        <div class="sentence-card" draggable="true" id="sentence5" data-correct="box2">我__中国菜好吃。</div>
+        <div class="sentence-card" draggable="true" id="sentence6" data-correct="box1">我__吃中国菜。</div>
+    </div>
+
+    <div class="boxes-container">
+        <div class="drop-box" id="box1">
+            <h2>想</h2>
+        </div>
+        <div class="drop-box" id="box2">
+            <h2>觉得</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

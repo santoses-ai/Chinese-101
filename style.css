@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eedada;
+    text-align: center;
+    padding: 20px;
+}
+
+.sentence-pool {
+    background-color: #d7d0cs;
+    border: 2px solid #3D2411;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: inline-block;
+    min-width: 300px;
+}
+
+.sentence-card {
+    background-color: #8A9646;
+    border: 1px solid #36462B;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: grab;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+/* Visually changes the card while active dragging happens */
+.sentence-card:active {
+    cursor: grabbing;
+    opacity: 0.5;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.drop-box {
+    background-color: #7f7d74;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    width: 300px;
+    min-height: 200px;
+    padding: 15px;
+    transition: background-color 0.2s;
+}
+
+/* Visual cue when hovering over a drop box */
+.drop-box.hovered {
+    background-color: #f0fdf4;
+    border-color: #22c55e;
+}
