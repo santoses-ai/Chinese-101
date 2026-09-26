@@ -55,10 +55,13 @@ body {
 }
 
 #reset-btn {
+   display: block;
+   margin: 0 auto 25px;
     background-color: #c1cebb;
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
     font-weight: bold;
     border-radius: 6px;
@@ -68,7 +71,7 @@ body {
 }
 
 #reset-btn:hover {
-    background-color: #0369a1;
+    background-color: #f4bbc9;
 }
 
 #reset-btn:active {
