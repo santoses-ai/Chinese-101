@@ -118,6 +118,25 @@ document.getElementById('reset-btn').addEventListener('click', () => {
     });
 });
 
+const languageButton = document.getElementById('language-btn');
+let isTraditionalChinese = false;
+
+languageButton.addEventListener('click', () => {
+    isTraditionalChinese = !isTraditionalChinese;
+    const languageKey = isTraditionalChinese ? 'trad' : 'simp';
+
+    document.querySelectorAll('[data-simp][data-trad]').forEach(element => {
+        element.textContent = element.dataset[languageKey];
+    });
+
+    document.documentElement.lang = isTraditionalChinese ? 'zh-Hant' : 'zh-Hans';
+    languageButton.textContent = isTraditionalChinese ? 'Simplified Chinese' : 'Traditional Chinese';
+    languageButton.setAttribute(
+        'aria-label',
+        isTraditionalChinese ? 'Switch to Simplified Chinese' : 'Switch to Traditional Chinese'
+    );
+});
+
 // 4. Simple Verification System
 function checkAnswer(card, targetBoxId) {
     const correctBox = card.getAttribute('data-correct');
